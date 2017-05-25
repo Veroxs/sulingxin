@@ -1,0 +1,124 @@
+.page-login{
+    background: #fff;
+    .banner{
+        width: 100%;
+        height: 360px;
+        background: #3da4f1;
+        color: #fff;
+        h3{
+            font-size: 68px;
+            padding: 60px 0 40px 0;
+            text-align: center;
+            letter-spacing: 16px;
+        }
+        .en{
+            font-size: 50px;
+            text-align: center;
+        }
+    }
+    .login-section{
+        .form-line{
+            height: 140px;
+            line-height: 140px;
+            box-sizing: border-box;
+            border-bottom: 1PX solid #ddd;
+            padding: 0 150px 0 90px;
+            position: relative;
+            input{
+                border: none;
+                outline: none;
+                background: #fff;
+                width: 100%;
+                &[placeholder]{
+                    font-size: 40px;
+                }
+            }
+            &.mima{
+                .tb{
+                    position: absolute;
+                    right: 90px;
+                    top: 0;
+                    height: 140px;
+                    line-height: 140px;
+                    font-size: 50px;
+                    display: inline-block;
+                    color: #666;
+                    i{
+                        cursor: pointer;
+                    }
+                }
+            }
+            &.yzm{
+                padding: 0 200px 0 90px;
+                .tb{
+                    position: absolute;
+                    right: 90px;
+                    top: 0;
+                    height: 140px;
+                    line-height: 140px;
+                    font-size: 30px;
+                    display: inline-block;
+                    cursor: pointer;
+                    color: #3da4f1;
+                }
+            }
+        }
+        .chk-line{
+            padding: 30px 60px;
+            font-size: 28px;
+            color: #666;
+            .chk{
+                position: relative;
+                margin-right: 4px;
+                display: inline-block;
+                margin-top: -6px;
+                input[type="checkbox"]{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                }
+                i{
+                    font-size: 28px;
+                    color: #3da4f1;
+
+
+                }
+            }
+            
+            span{
+                color: #3da4f1;
+                padding: 0 10px;
+            }
+        }
+        .btn-login{
+            width: 980px;
+            height: 124px;
+            line-height: 124px;
+            background: #3da4f1;
+            color: #fff;
+            text-align: center;
+            font-size: 42px;
+            letter-spacing: 8px;
+            display: block;
+            margin: 60px auto;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            &:disabled{
+                background: #ccc;
+            }
+        }
+    }
+    .copyright{
+        width: 620px;
+        margin: 120px auto 80px auto;
+        color: #3da4f1;
+        line-height: 1.5;
+        text-align: center;
+        font-size: 42px;
+    }
+}

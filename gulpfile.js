@@ -3,6 +3,9 @@ var gulp = require("gulp"),
     postcss = require('gulp-postcss'),
     cssurl = require('gulp-cssurl'),
     base64 = require('gulp-base64'),
+    webpack = require('gulp-webpack'),
+    webpackConfig = require('./webpack.config'),
+    uglify = require('gulp-uglify'),
     processors = [
         require('autoprefixer'),
         require('css-mqpacker'),
@@ -23,43 +26,38 @@ var gulp = require("gulp"),
         dev: 'dev/'
     }
 
+gulp.task("help",function(){
+    var tasks = Object.keys(gulp.tasks);
+    for(var task in tasks){
+        console.log("gulp %s",tasks[task]);
+    }
+});
 
+gulp.task('copy', function () {
+    gulp.src(path.dev + '/fonts/fonts/*')
+        .pipe(gulp.dest(path.dist + "/css/fonts"))
+    gulp.src(path.dev + '/img/*')
+        .pipe(gulp.dest(path.dist + "/images"))
+    gulp.src(path.dev + '/js/*')
+        .pipe(gulp.dest(path.dist + "/js"))
+});
+/*极速贷---start---*/
 
-/*速领薪*/
-gulp.task('indexLess', function () {
-    gulp.src(path.dev + "/less/app/*.less")
+gulp.task('styles:less', function () {
+    gulp.src(path.dev + "/less/styles.less")
         .pipe(less())
         .pipe(postcss(processors))
         .pipe(cssurl())
-        .pipe(gulp.dest(path.dist + "/css/"))
         .pipe(base64({maxImageSize: 20 * 1024}))
-
-    gulp.src(path.dev + "/img/**")
-        .pipe(gulp.dest(path.dist + "/images/"))
-
-    gulp.src(path.dev + "/less/img/**")
-        .pipe(gulp.dest(path.dist + "/css/img/"))
-
-    gulp.src(path.dev + "/js/**")
-        .pipe(gulp.dest(path.dist + "/js/"))
-  
-})
-
-gulp.task('dev', ['indexLess'], function () {
-    gulp.src(path.dev + '/images/*')
-        .pipe(gulp.dest(path.dist + "/css/app/images"))
-    gulp.watch(path.dev + "/less/**/*.less", ['indexLess'])
+        .pipe(gulp.dest(path.dist + "/css/"))
 });
 
-gulp.task('base', function () {
-    gulp.src(path.dev + "/less/base.less")
-        .pipe(less())
-        .pipe(postcss(processors))
-        .pipe(cssurl())
-        .pipe(gulp.dest(path.dist + "/css/"))
-        .pipe(base64({maxImageSize: 20 * 1024}))
-})
-
-gulp.task('default', ['indexLess', 'base'], function () {
-    gulp.watch(path.dev + "/less/**/*.less", ['indexLess', 'base'])
+gulp.task('styles', ['copy', 'styles:less'], function () {
+    gulp.watch(path.dev + '/images/*', ['copy'])
+    gulp.watch(path.dev + '/js/*', ['copy'])
+    gulp.watch(path.dev + '/fonts/fonts/*', ['copy'])
+    gulp.watch(path.dev + "/less/**/*.less", ['styles:less'])
+    gulp.watch(path.dev + '/fonts/fonts/*', ['styles:less'])
 });
+
+/*极速贷---end---*/

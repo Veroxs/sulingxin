@@ -1,0 +1,151 @@
+.page-flow{
+    padding-left: 20px;
+    padding-right: 20px;
+    .result-section{
+        margin: 60px 0;
+        min-height:264px; 
+        ul{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -o-box;
+            display: -ms-flexbox;
+            display: flex;
+            li{
+               -moz-box-flex: 1;
+                -webkit-box-flex: 1;
+                -o-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                text-align: center;
+                color: #333;
+                .result-item{
+                    display: inline-block;
+                    width: 264px;
+                    height: 264px;
+                    border-radius: 50%;
+                    border: 1PX solid #ddd;
+                    text-align: center;
+                    background: #fff;
+                    p{
+                        text-align: center;
+                        font-size: 26px;
+                        &.day{
+                            font-size: 64px;
+                            color: #cc6a13;
+                            padding-top: 10px;
+                        }
+                        &.money{
+                            font-size: 50px;
+                            color: #cc6a13;
+                            padding-top: 24px;
+                        }
+                    }
+                    .price{
+                        color: #666;
+                        span{
+                            color: #333;
+                            font-size: 42px;
+                            padding: 0 8px;
+                            
+                        }
+                    }
+                    .txt{
+                        color: #666;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+        .noResult{
+            display: none;
+            height: 264px;
+            line-height: 264px;
+            font-size: 36px;
+            text-align: center;
+            color: #666;
+        }
+    }
+    .how{
+        height: 160px;
+        border: 1PX solid #ddd;
+        margin-bottom: 60px;
+        background: #fff;
+        position: relative;
+        border-radius: 6px;
+        padding-left: 186px;
+        .tit{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 186px;
+            height: 160px;
+            line-height: 160px;
+            text-align: center;
+            font-size: 36px;
+            color: #666;
+            border-right: 1PX solid #ddd;
+        }
+        .radioList{
+            padding: 0 10px;
+            .radioItem{
+                width: 33.333%;
+                float: left;
+                text-align: center;
+                height: 160px;
+                line-height: 160px;
+                font-size: 38px;
+                color: #666;
+                .rad{
+                    display: inline-block;
+                    position: relative;
+                    input[type='radio']{
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0;
+                    }
+                    input[type='radio']+label{
+                        display: inline-block;
+                        width: 46px;
+                        height: 46px;
+                        background: url(../images/unchecked.png) no-repeat;
+                        background-size: 100% auto;
+                        vertical-align: middle;
+                        margin-top: -6px;
+                    }
+                    input[type='radio']:checked +label{
+                        display: inline-block;
+                        width: 46px;
+                        height: 46px;
+                        background: url(../images/checked.png) no-repeat;
+                        background-size: 100% auto;
+                        vertical-align: middle;
+                        margin-top: -6px;
+                    }
+                }
+            }
+            &.dayList{
+                .radioItem{
+                    width: 50%
+                }
+            }
+            
+
+        }
+    }
+    .flow-btn{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        height: 130px;
+        line-height: 130px;
+        color: #fff;
+        text-align: center;
+        font-size: 42px;
+        background: #0bb9ee;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+}

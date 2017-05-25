@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>流程</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="email=no,address=no,telephone=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="page-flow" data-page="flow">
+<div class="header-title">
+    <em class="back"></em>
+    <h2>极速贷</h2>
+</div>
+<main>
+    <div class="result-section">
+        <ul class="result-list">
+            <li>
+                <div class="result-item">
+                    <p class="money"><i class="icon icon-money"></i></p>
+                    <p class="price"><span>700</span>元</p>
+                    <p class="txt">借款金额</p>
+                </div>
+            </li>
+             <li>
+                <div class="result-item">
+                    <p class="day"><i class="icon icon-day"></i></p>
+                    <p class="price"><span>15</span>天</p>
+                    <p class="txt">借款期限</p>
+                </div>
+            </li>
+             <li>
+                <div class="result-item">
+                    <p class="money"><i class="icon icon-money"></i></p>
+                    <p class="price"><span>105</span>元</p>
+                    <p class="txt">借款费用</p>
+                </div>
+            </li>
+        </ul>
+        <p class="noResult">暂未开放</p>
+    </div>
+    <div class="how">
+        <div class="tit">借多少</div>
+        <div class="radioList">
+            <div class="radioItem">
+                <div class="rad"><input type="radio" name="muchRadio"><label></label></div>
+                300元
+            </div>
+            <div class="radioItem">
+                <div class="rad"><input type="radio" name="muchRadio"><label></label></div>
+                500元
+            </div>
+            <div class="radioItem">
+                <div class="rad"><input type="radio" name="muchRadio" checked><label></label></div>
+                700元
+            </div>
+        </div>
+    </div>
+    <div class="how">
+        <div class="tit">借多久</div>
+        <div class="radioList dayList">
+            <div class="radioItem">
+                <div class="rad"><input type="radio" name="dayRadio" checked><label></label></div>
+                7天
+            </div>
+            <div class="radioItem notOpen">
+                <div class="rad"><input type="radio" name="dayRadio"><label></label></div>
+                14天
+            </div>
+        </div>
+    </div>
+    <a class="flow-btn">我要借款</a>
+</main>
+
+<!-- js start -->
+<script src="js/zepto.min.js"></script>
+<script src="js/autoFize.js"></script>
+<script src="js/swiper-3.3.1.jquery.min.js"></script>
+<script src="js/flow.js"></script>
+<script type="text/javascript">
+        $(function(){
+            $('input[name="dayRadio"]').click(function(){
+                if($(this).parents('.radioItem').hasClass('notOpen')){
+                    $('.result-list').hide();
+                    $('.noResult').show();
+                }else{
+                    $('.result-list').show();
+                    $('.noResult').hide();
+                }
+            })
+        })
+</script>
+<!-- js end -->
+</body>
+</html>

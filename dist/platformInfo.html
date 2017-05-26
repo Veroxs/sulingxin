@@ -23,32 +23,38 @@
     <div class="edit-section">
         <div class="form-line">
             <label class="lab-tit">平台名称</label>
-            <input type="text" class="input-txt" placeholder="请输入平台名称">
+            <input type="text" id="platName" class="input-txt" placeholder="请输入平台名称">
         </div>
         <div class="form-line">
             <label class="lab-tit">平台账号</label>
-            <input type="text" class="input-txt" placeholder="请输入账号">
+            <input type="text" id="account" class="input-txt" placeholder="请输入账号">
         </div>
         <div class="form-line">
             <label class="lab-tit">平台密码</label>
-            <input type="text" class="input-txt" placeholder="请输入密码">
+            <input type="text" id="pas" class="input-txt" placeholder="请输入密码">
         </div>
         <div class="chk-line">
             <em class="chk" id="chk"><input type="checkbox" id="chk-input" class="form-input"><i class="icon icon-checkbox"></i></em>
             同意授权访问您其他借款平台的账户信息
         </div>
-        <a class="btn-1">提交</a>
+        <div class="btnWrap">
+            <a class="btn-1" id="submit">提交</a>
+        </div>
+        
     </div>   
     <div class="prompt">
         <h3>如何增加借款通过率？</h3>
         <p>1、经常填写您使用平台的账户信息</p>
         <p>2、填写2个以上账户信息</p>
-    </div>   
+    </div> 
+     <!-- 提示信息 -->
+    <div class="prompt-popup"><p class="nowrap-text"></p></div>  
 </main>
 
 <!-- js start -->
 <script src="js/zepto.min.js"></script>
 <script src="js/autoFize.js"></script>
+<script src="js/platform.js"></script>
 
 <!-- js end -->
 </body>

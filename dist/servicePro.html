@@ -20,33 +20,39 @@
     <div class="edit-section">
         <div class="form-line">
             <label class="lab-tit">电话号码</label>
-            <input type="text" class="input-txt">
+            <input type="text" id="tel" class="input-txt">
         </div>
         <div class="form-line">
             <label class="lab-tit">服务密码</label>
-            <input type="text" class="input-txt">
+            <input type="text" id="pas" class="input-txt">
         </div>
         <div class="form-line">
             <label class="lab-tit">动态码</label>
-            <input type="text" class="input-txt">
+            <input type="text" id="msg" class="input-txt">
         </div>
         <div class="chk-line">
             <em class="chk" id="chk"><input type="checkbox" id="chk-input" class="form-input"><i class="icon icon-checkbox"></i></em>
             同意运营商授权协议
         </div>
-        <a class="btn-1">登录</a>
+        <div class="btnWrap">
+            <a class="btn-1" id="submit">登录</a>
+        </div>
+        
     </div>   
     <div class="prompt">
         <h3>温馨提示</h3>
         <p>1、请授权本人实名认证手机号</p>
         <p>2、登录成功后将受到运营商通知短信，无需回复</p>
         <p>3、可授权多个手机号</p>
-    </div>   
+    </div> 
+    <!-- 提示信息 -->
+    <div class="prompt-popup"><p class="nowrap-text"></p></div>    
 </main>
 
 <!-- js start -->
 <script src="js/zepto.min.js"></script>
 <script src="js/autoFize.js"></script>
+<script src="js/servicePro.js"></script>
 
 <!-- js end -->
 </body>

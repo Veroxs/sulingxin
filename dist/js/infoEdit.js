@@ -82,6 +82,10 @@ var infoEdit = {
                 promptPopup('手机号格式错误');
                 return false;
             }
+            if($("#yzm").val()==''){
+                promptPopup('验证码不能为空');
+                return false;
+            }
             if($("#chk-input").attr("checked")!="checked"){
                 promptPopup('未同意用户协议');
                 return false;

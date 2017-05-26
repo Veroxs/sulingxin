@@ -1,5 +1,29 @@
 $(function(){
     servicePro.init();
+    //获取短信验证码
+    var validCode=true;
+    $("#getMsg").click (function  () {
+        setTimeout(function(){
+            promptPopup('信息已发送');
+        },1000);
+        var time=30;
+        var code=$(this);
+        if (validCode) {
+            validCode=false;
+            code.addClass("unabled");
+        var t=setInterval(function  () {
+            time--;
+            code.html(time+"秒");
+            if (time==0) {
+                clearInterval(t);
+            code.html("重新获取");
+                validCode=true;
+            code.removeClass("unabled");
+
+            }
+        },1000)
+        }
+    })    
 })
 
 function promptPopup(e){

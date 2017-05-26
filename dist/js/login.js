@@ -1,14 +1,22 @@
 $(function(){
     login.init();
 })
+
+function promptPopup(e){
+    $('.prompt-popup').show();
+    $('.prompt-popup').find('.nowrap-text').text(e);
+    setTimeout(function() {
+        $('.prompt-popup').hide()
+    }, 2000)
+}
+
 var login = {
     init:function(){
-        login.event.isComplete(this);
-        $('#eye').click(function() {
+        $('.eye').click(function() {
             login.event.isShowPassword(this);
         });
-        $('#chk').click(function(){
-            login.event.isAgree(this);
+        $('#login').click(function(){
+            login.event.isComplete();
         })
     },
     event:{
@@ -25,34 +33,25 @@ var login = {
                 input.attr('type','password');
             }
         },
-        isAgree:function(e){
-            var i = $(e).find('.icon');
-            if(i.hasClass('icon-checkbox')){
-                i.removeClass('icon-checkbox');
-                i.addClass('icon-checkbox2');
-                i.prev().attr('checked',true);
-
-            }else{
-                i.removeClass('icon-checkbox2');
-                i.addClass('icon-checkbox');
-                i.prev().attr('checked',false);
-            }
-        },
         isComplete:function(){
-            var phoneVal = $('#tel').val(),
-            passWordVal = $('#pas').val(),
-            yzmVal = $('#yzm').val(),
-            agree = $('#chk').find('input');
-            $('.edit').click(function(){
-                if((phoneVal!='')&& (passWordVal !='')&& (yzmVal!='') && (agree.is(':checked'))){
-                    $('.btn-login').attr('disabled',false);
-                    console.log(111);
-                }else{
-                    $('.btn-login').attr('disabled',true);
-                    console.log(222);
-                }
-            })
+            if($("#tel").val()==''){
+                promptPopup('手机号不能为空');
+                return false;
+            }
+            if(!$("#tel").val().match(/^(((13[0-9]{1})|159|153)+\d{8})$/)){
+                promptPopup('手机号格式错误');
+                return false;
+            }
+            if($("#pas").val()==''){
+                promptPopup('密码不能为空');
+                return false;
+            }
+            login.submit();
             
-        }
+        },
+    },
+    submit:function(){
+        promptPopup('登录成功');
     }
+    
 }

@@ -31,7 +31,12 @@
         <div class="info-line">
             <label class="lab-tit">与本人关系</label>
             <!-- <input type="text" class="input-txt"> -->
-            <em class="arrow-right"></em>            
+            <em class="arrow-right"></em>
+            <span class="select-txt"></span>
+            <select>
+                <option value="父母">父母</option>
+                <option value="配偶">配偶</option>
+            </select>            
         </div>        
             
     </div> 
@@ -49,7 +54,12 @@
         <div class="info-line">
            <label class="lab-tit">与本人关系</label>
             <!-- <input type="text" class="input-txt"> -->
-            <em class="arrow-right"></em>  
+            <em class="arrow-right"></em>
+            <span class="select-txt"></span> 
+            <select>
+                <option value="朋友">朋友</option>
+                <option value="同事">同事</option>
+            </select>   
         </div>        
             
     </div>       
@@ -60,8 +70,18 @@
 </main>
 
 <!-- js start -->
+<script src="js/jquery.js"></script>
 <script src="js/zepto.min.js"></script>
 <script src="js/autoFize.js"></script>
+<script type="text/javascript">
+    $(function(){
+        var select = $('.info-line').find('select');
+        select.change(function(){
+            var val = $(this).find('option:selected').val();
+            $(this).parents('.info-line').find('.select-txt').text(val);
+        })
+    })
+</script>
 
 <!-- js end -->
 </body>

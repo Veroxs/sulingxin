@@ -52,6 +52,13 @@ body {
 .clearfix {
   *zoom: 1;
 }
+/* 去除点击默认阴影 */
+a,img,button,input,textarea{-webkit-tap-highlight-color:rgba(255,255,255,0);}
+input,textarea,select{
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+}
 
 img {
   width: 100%;
@@ -297,3 +304,55 @@ img {
                 padding: 0 8px;
             }
         }
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {color: #aaa;}
+input:-moz-placeholder,textarea:-moz-placeholder {color:#aaa;}
+input::-moz-placeholder,textarea::-moz-placeholder {color:#aaa;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {color:#aaa;}
+
+// --------------------------------
+// just for modal/popup
+// --------------------------------
+.normal-modal{
+  @z-index: 200;
+  .modal-box{
+    background-color: #fff;
+    min-width: 843.75px;
+    padding: 40.5px 50.625px;
+    border-radius: 16.875px;
+    position: absolute;
+    top: 337.5px;
+    left: 50%;
+    z-index: @z-index + 1;
+    transform: translate(-50%,0);
+  }
+  .modal-mask{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: @z-index;
+  }
+  .modal-title{
+    text-align: center;
+  }
+  .modal-action{
+    text-align: right;
+    margin-top: 40.5px;
+    .action-link{
+      display: inline-block;
+      color: #007fd7;
+      padding: 16.875px 67.5px;
+    }
+  }
+  &.confirm-modal{
+    .modal-box{
+      position: fixed;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .confirm-text{ margin: 67.5px 50.625px; }
+  }
+}

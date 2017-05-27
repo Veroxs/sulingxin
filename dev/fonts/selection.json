@@ -4,28 +4,25 @@
     {
       "icon": {
         "paths": [
-          "M896 1024h-768c-70.656 0-128-57.344-128-128v-768c0-70.656 57.344-128 128-128h768c70.656 0 128 57.344 128 128v768c0 70.656-57.344 128-128 128z",
-          "M542.72 547.84h-61.44c-5.632 0-10.24-4.608-10.24-10.24v-61.44c0-5.632 4.608-10.24 10.24-10.24h61.44c5.632 0 10.24 4.608 10.24 10.24v61.44c0 5.632-4.608 10.24-10.24 10.24z"
+          "M816.413 407.688c35.746-39.857 12.011-156.572 6.067-140.625-5.989 16.045-30.68 18.338-30.68 18.338s10.478-8.404 3.745-70.295c-6.733-61.891-28.429-87.106-28.429-87.106s-14.962 23.685-45.635 54.251c-30.678 30.56-80.804 33.619-80.804 33.619s2.244-8.404 4.49-22.538c2.245-14.138-2.99-30.184-2.99-30.184s-6.733 9.934-42.646 33.619c-18.766 12.38-28.744 16.407-33.997 17.438-17.432-2.853-35.315-4.342-53.536-4.342-185.521 0-335.914 153.599-335.914 343.069 0 189.476 150.393 343.069 335.914 343.069s335.914-153.594 335.914-343.069c0.002-51.915-11.289-101.137-31.499-145.244zM384 686.062h-45.617l-46.119-99.431-18.297-45.145h-1.253c2.005 22.988 5.765 51.239 5.765 76.166v68.41h-42.609v-206.062h45.617l46.369 98.599 18.297 45.7h1.253c-2.506-21.88-6.015-51.516-6.015-76.166v-68.133h42.609v206.062zM560.268 686.062h-121.060v-206.062h118.304v40.991h-73.439v38.221h62.41v41.544h-62.41v43.761h76.195v41.545zM770.751 686.062h-56.395l-16.793-89.737c-3.008-15.786-5.514-32.405-7.269-47.915h-1.254c-2.255 15.51-4.512 32.128-7.269 47.915l-16.291 89.737h-55.392l-34.088-206.062h45.868l11.78 93.891 7.52 65.364h1.003c3.509-21.88 7.269-44.038 11.028-65.364l19.049-93.891h37.597l19.55 93.891c3.76 21.049 7.018 43.206 10.778 65.364h1.253c2.256-22.158 4.763-44.038 7.019-65.364l12.030-93.891h42.609l-32.333 206.062z"
         ],
         "attrs": [
-          {},
           {}
         ],
         "isMulticolor": false,
         "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "checkbox3"
+          "new"
         ]
       },
       "attrs": [
-        {},
         {}
       ],
       "properties": {
-        "order": 1019,
-        "id": 36,
-        "name": "checkbox3",
+        "order": 1056,
+        "id": 37,
+        "name": "new",
         "prevSize": 32,
         "code": 59648
       },
@@ -36,31 +33,52 @@
     {
       "icon": {
         "paths": [
-          "M885.178 0h-746.481c-76.678 0-138.697 62.144-138.697 138.697v746.607c0 76.678 62.144 138.697 138.697 138.697h746.607c76.678 0 138.697-62.144 138.697-138.697v-746.481c0-76.678-62.144-138.822-138.822-138.822zM423.858 769.159h-21.926l-201.593-281.152 25.058-25.058 185.931 146.841 373.491-357.83 29.694 23.429-390.656 493.77z"
-        ],
-        "attrs": [
-          {}
+          "M896 1024h-768c-70.656 0-128-57.344-128-128v-768c0-70.656 57.344-128 128-128h768c70.656 0 128 57.344 128 128v768c0 70.656-57.344 128-128 128zM542.72 547.84h-61.44c-5.632 0-10.24-4.608-10.24-10.24v-61.44c0-5.632 4.608-10.24 10.24-10.24h61.44c5.632 0 10.24 4.608 10.24 10.24v61.44c0 5.632-4.608 10.24-10.24 10.24z"
         ],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 0,
         "tags": [
-          "checkbox4"
-        ]
+          "checkbox3"
+        ],
+        "defaultCode": 59648,
+        "grid": 0
       },
-      "attrs": [
-        {}
-      ],
       "properties": {
-        "order": 1020,
-        "id": 35,
-        "name": "checkbox4",
+        "id": 1,
+        "order": 1057,
+        "ligatures": "",
         "prevSize": 32,
-        "code": 59649
+        "code": 59649,
+        "name": "checkbox3"
       },
       "setIdx": 0,
       "setId": 0,
       "iconIdx": 1
+    },
+    {
+      "icon": {
+        "paths": [
+          "M885.178 0h-746.481c-76.678 0-138.697 62.144-138.697 138.697v746.607c0 76.678 62.144 138.697 138.697 138.697h746.607c76.678 0 138.697-62.144 138.697-138.697v-746.481c0-76.678-62.144-138.822-138.822-138.822zM423.858 769.159h-21.926l-201.593-281.152 25.058-25.058 185.931 146.841 373.491-357.83 29.694 23.429-390.656 493.77z"
+        ],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "checkbox4"
+        ],
+        "defaultCode": 59649,
+        "grid": 0
+      },
+      "properties": {
+        "id": 2,
+        "order": 1058,
+        "ligatures": "",
+        "prevSize": 32,
+        "code": 59650,
+        "name": "checkbox4"
+      },
+      "setIdx": 0,
+      "setId": 0,
+      "iconIdx": 2
     },
     {
       "icon": {
@@ -72,20 +90,20 @@
         "tags": [
           "checked"
         ],
-        "defaultCode": 59648,
+        "defaultCode": 59650,
         "grid": 0
       },
       "properties": {
-        "id": 1,
-        "order": 1021,
+        "id": 3,
+        "order": 1059,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59650,
+        "code": 59651,
         "name": "checked"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 2
+      "iconIdx": 3
     },
     {
       "icon": {
@@ -97,20 +115,20 @@
         "tags": [
           "day"
         ],
-        "defaultCode": 59649,
+        "defaultCode": 59651,
         "grid": 0
       },
       "properties": {
-        "id": 2,
-        "order": 1022,
+        "id": 4,
+        "order": 1060,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59651,
+        "code": 59652,
         "name": "day"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 3
+      "iconIdx": 4
     },
     {
       "icon": {
@@ -122,20 +140,20 @@
         "tags": [
           "money"
         ],
-        "defaultCode": 59650,
+        "defaultCode": 59652,
         "grid": 0
       },
       "properties": {
-        "id": 3,
-        "order": 1023,
+        "id": 5,
+        "order": 1061,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59652,
+        "code": 59653,
         "name": "money"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 4
+      "iconIdx": 5
     },
     {
       "icon": {
@@ -147,20 +165,20 @@
         "tags": [
           "unchecked"
         ],
-        "defaultCode": 59651,
+        "defaultCode": 59653,
         "grid": 0
       },
       "properties": {
-        "id": 4,
-        "order": 1024,
+        "id": 6,
+        "order": 1062,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59653,
+        "code": 59654,
         "name": "unchecked"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 5
+      "iconIdx": 6
     },
     {
       "icon": {
@@ -172,20 +190,20 @@
         "tags": [
           "biyan"
         ],
-        "defaultCode": 59652,
+        "defaultCode": 59654,
         "grid": 0
       },
       "properties": {
-        "id": 5,
-        "order": 1025,
+        "id": 7,
+        "order": 1063,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59654,
+        "code": 59655,
         "name": "biyan"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 6
+      "iconIdx": 7
     },
     {
       "icon": {
@@ -197,20 +215,20 @@
         "tags": [
           "zhengyan"
         ],
-        "defaultCode": 59653,
+        "defaultCode": 59655,
         "grid": 0
       },
       "properties": {
-        "id": 6,
-        "order": 1026,
+        "id": 8,
+        "order": 1064,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59655,
+        "code": 59656,
         "name": "zhengyan"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 7
+      "iconIdx": 8
     },
     {
       "icon": {
@@ -222,20 +240,20 @@
         "tags": [
           "arrow-right"
         ],
-        "defaultCode": 59654,
+        "defaultCode": 59656,
         "grid": 0
       },
       "properties": {
-        "id": 7,
-        "order": 1027,
+        "id": 9,
+        "order": 1065,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59656,
+        "code": 59657,
         "name": "arrow-right"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 8
+      "iconIdx": 9
     },
     {
       "icon": {
@@ -247,20 +265,20 @@
         "tags": [
           "edit1"
         ],
-        "defaultCode": 59655,
+        "defaultCode": 59657,
         "grid": 0
       },
       "properties": {
-        "id": 8,
-        "order": 1028,
+        "id": 10,
+        "order": 1066,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59657,
+        "code": 59658,
         "name": "edit1"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 9
+      "iconIdx": 10
     },
     {
       "icon": {
@@ -272,20 +290,20 @@
         "tags": [
           "fangzi"
         ],
-        "defaultCode": 59656,
+        "defaultCode": 59658,
         "grid": 0
       },
       "properties": {
-        "id": 9,
-        "order": 1029,
+        "id": 11,
+        "order": 1067,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59658,
+        "code": 59659,
         "name": "fangzi"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 10
+      "iconIdx": 11
     },
     {
       "icon": {
@@ -297,20 +315,20 @@
         "tags": [
           "gantanhao"
         ],
-        "defaultCode": 59657,
+        "defaultCode": 59659,
         "grid": 0
       },
       "properties": {
-        "id": 10,
-        "order": 1030,
+        "id": 12,
+        "order": 1068,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59659,
+        "code": 59660,
         "name": "gantanhao"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 11
+      "iconIdx": 12
     },
     {
       "icon": {
@@ -323,20 +341,20 @@
         "tags": [
           "jiansheyinhang"
         ],
-        "defaultCode": 59658,
+        "defaultCode": 59660,
         "grid": 0
       },
       "properties": {
-        "id": 11,
-        "order": 1031,
+        "id": 13,
+        "order": 1069,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59660,
+        "code": 59661,
         "name": "jiansheyinhang"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 12
+      "iconIdx": 13
     },
     {
       "icon": {
@@ -348,20 +366,20 @@
         "tags": [
           "jiaoyimima"
         ],
-        "defaultCode": 59659,
+        "defaultCode": 59661,
         "grid": 0
       },
       "properties": {
-        "id": 12,
-        "order": 1032,
+        "id": 14,
+        "order": 1070,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59661,
+        "code": 59662,
         "name": "jiaoyimima"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 13
+      "iconIdx": 14
     },
     {
       "icon": {
@@ -373,20 +391,20 @@
         "tags": [
           "laba"
         ],
-        "defaultCode": 59660,
+        "defaultCode": 59662,
         "grid": 0
       },
       "properties": {
-        "id": 13,
-        "order": 1033,
+        "id": 15,
+        "order": 1071,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59662,
+        "code": 59663,
         "name": "laba"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 14
+      "iconIdx": 15
     },
     {
       "icon": {
@@ -398,20 +416,20 @@
         "tags": [
           "lianxiren"
         ],
-        "defaultCode": 59661,
+        "defaultCode": 59663,
         "grid": 0
       },
       "properties": {
-        "id": 14,
-        "order": 1034,
+        "id": 16,
+        "order": 1072,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59663,
+        "code": 59664,
         "name": "lianxiren"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 15
+      "iconIdx": 16
     },
     {
       "icon": {
@@ -424,20 +442,20 @@
         "tags": [
           "mine"
         ],
-        "defaultCode": 59662,
+        "defaultCode": 59664,
         "grid": 0
       },
       "properties": {
-        "id": 15,
-        "order": 1035,
+        "id": 17,
+        "order": 1073,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59664,
+        "code": 59665,
         "name": "mine"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 16
+      "iconIdx": 17
     },
     {
       "icon": {
@@ -449,20 +467,20 @@
         "tags": [
           "mine2"
         ],
-        "defaultCode": 59663,
+        "defaultCode": 59665,
         "grid": 0
       },
       "properties": {
-        "id": 16,
-        "order": 1036,
+        "id": 18,
+        "order": 1074,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59665,
+        "code": 59666,
         "name": "mine2"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 17
+      "iconIdx": 18
     },
     {
       "icon": {
@@ -474,20 +492,20 @@
         "tags": [
           "no"
         ],
-        "defaultCode": 59664,
+        "defaultCode": 59666,
         "grid": 0
       },
       "properties": {
-        "id": 17,
-        "order": 1037,
+        "id": 19,
+        "order": 1075,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59666,
+        "code": 59667,
         "name": "no"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 18
+      "iconIdx": 19
     },
     {
       "icon": {
@@ -500,20 +518,20 @@
         "tags": [
           "qianbao"
         ],
-        "defaultCode": 59665,
+        "defaultCode": 59667,
         "grid": 0
       },
       "properties": {
-        "id": 18,
-        "order": 1038,
+        "id": 20,
+        "order": 1076,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59667,
+        "code": 59668,
         "name": "qianbao"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 19
+      "iconIdx": 20
     },
     {
       "icon": {
@@ -526,20 +544,20 @@
         "tags": [
           "shenfenzheng1"
         ],
-        "defaultCode": 59666,
+        "defaultCode": 59668,
         "grid": 0
       },
       "properties": {
-        "id": 19,
-        "order": 1039,
+        "id": 21,
+        "order": 1077,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59668,
+        "code": 59669,
         "name": "shenfenzheng1"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 20
+      "iconIdx": 21
     },
     {
       "icon": {
@@ -551,20 +569,20 @@
         "tags": [
           "shenfenzheng2"
         ],
-        "defaultCode": 59667,
+        "defaultCode": 59669,
         "grid": 0
       },
       "properties": {
-        "id": 20,
-        "order": 1040,
+        "id": 22,
+        "order": 1078,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59669,
+        "code": 59670,
         "name": "shenfenzheng2"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 21
+      "iconIdx": 22
     },
     {
       "icon": {
@@ -576,20 +594,20 @@
         "tags": [
           "shoujirenzheng"
         ],
-        "defaultCode": 59668,
+        "defaultCode": 59670,
         "grid": 0
       },
       "properties": {
-        "id": 21,
-        "order": 1041,
+        "id": 23,
+        "order": 1079,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59670,
+        "code": 59671,
         "name": "shoujirenzheng"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 22
+      "iconIdx": 23
     },
     {
       "icon": {
@@ -602,20 +620,20 @@
         "tags": [
           "tuijian"
         ],
-        "defaultCode": 59669,
+        "defaultCode": 59671,
         "grid": 0
       },
       "properties": {
-        "id": 22,
-        "order": 1042,
+        "id": 24,
+        "order": 1080,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59671,
+        "code": 59672,
         "name": "tuijian"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 23
+      "iconIdx": 24
     },
     {
       "icon": {
@@ -627,20 +645,20 @@
         "tags": [
           "wenhao"
         ],
-        "defaultCode": 59670,
+        "defaultCode": 59672,
         "grid": 0
       },
       "properties": {
-        "id": 23,
-        "order": 1043,
+        "id": 25,
+        "order": 1081,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59672,
+        "code": 59673,
         "name": "wenhao"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 24
+      "iconIdx": 25
     },
     {
       "icon": {
@@ -652,20 +670,20 @@
         "tags": [
           "yes"
         ],
-        "defaultCode": 59671,
+        "defaultCode": 59673,
         "grid": 0
       },
       "properties": {
-        "id": 24,
-        "order": 1044,
+        "id": 26,
+        "order": 1082,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59673,
+        "code": 59674,
         "name": "yes"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 25
+      "iconIdx": 26
     },
     {
       "icon": {
@@ -678,20 +696,20 @@
         "tags": [
           "yinhangka1"
         ],
-        "defaultCode": 59672,
+        "defaultCode": 59674,
         "grid": 0
       },
       "properties": {
-        "id": 25,
-        "order": 1045,
+        "id": 27,
+        "order": 1083,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59674,
+        "code": 59675,
         "name": "yinhangka1"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 26
+      "iconIdx": 27
     },
     {
       "icon": {
@@ -704,20 +722,20 @@
         "tags": [
           "yinhangka2"
         ],
-        "defaultCode": 59673,
+        "defaultCode": 59675,
         "grid": 0
       },
       "properties": {
-        "id": 26,
-        "order": 1046,
+        "id": 28,
+        "order": 1084,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59675,
+        "code": 59676,
         "name": "yinhangka2"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 27
+      "iconIdx": 28
     },
     {
       "icon": {
@@ -729,20 +747,20 @@
         "tags": [
           "youhuiquan"
         ],
-        "defaultCode": 59674,
+        "defaultCode": 59676,
         "grid": 0
       },
       "properties": {
-        "id": 27,
-        "order": 1047,
+        "id": 29,
+        "order": 1085,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59676,
+        "code": 59677,
         "name": "youhuiquan"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 28
+      "iconIdx": 29
     },
     {
       "icon": {
@@ -754,20 +772,20 @@
         "tags": [
           "zhangdan"
         ],
-        "defaultCode": 59675,
+        "defaultCode": 59677,
         "grid": 0
       },
       "properties": {
-        "id": 28,
-        "order": 1048,
+        "id": 30,
+        "order": 1086,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59677,
+        "code": 59678,
         "name": "zhangdan"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 29
+      "iconIdx": 30
     },
     {
       "icon": {
@@ -779,20 +797,20 @@
         "tags": [
           "zhimaxinyong"
         ],
-        "defaultCode": 59676,
+        "defaultCode": 59678,
         "grid": 0
       },
       "properties": {
-        "id": 29,
-        "order": 1049,
+        "id": 31,
+        "order": 1087,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59678,
+        "code": 59679,
         "name": "zhimaxinyong"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 30
+      "iconIdx": 31
     },
     {
       "icon": {
@@ -804,20 +822,20 @@
         "tags": [
           "mine3"
         ],
-        "defaultCode": 59677,
+        "defaultCode": 59679,
         "grid": 0
       },
       "properties": {
-        "id": 30,
-        "order": 1050,
+        "id": 32,
+        "order": 1088,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59679,
+        "code": 59680,
         "name": "mine3"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 31
+      "iconIdx": 32
     },
     {
       "icon": {
@@ -829,20 +847,20 @@
         "tags": [
           "shouye"
         ],
-        "defaultCode": 59678,
+        "defaultCode": 59680,
         "grid": 0
       },
       "properties": {
-        "id": 31,
-        "order": 1051,
+        "id": 33,
+        "order": 1089,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59680,
+        "code": 59681,
         "name": "shouye"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 32
+      "iconIdx": 33
     },
     {
       "icon": {
@@ -854,51 +872,45 @@
         "tags": [
           "zhangdan2"
         ],
-        "defaultCode": 59679,
+        "defaultCode": 59681,
         "grid": 0
       },
       "properties": {
-        "id": 32,
-        "order": 1052,
+        "id": 34,
+        "order": 1090,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59681,
+        "code": 59682,
         "name": "zhangdan2"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 33
+      "iconIdx": 34
     },
     {
       "icon": {
         "paths": [
-          "M832 0h-640c-106.039 0-192 85.961-192 192v640c0 106.039 85.961 192 192 192h640c106.039 0 192-85.961 192-192v-640c0-106.039-85.961-192-192-192zM970.105 832c-0.077 76.243-61.863 138.029-138.098 138.105l-640.007 0c-76.243-0.077-138.029-61.863-138.105-138.098l-0-640.007c0.077-76.243 61.863-138.029 138.098-138.105l640.007-0c76.243 0.077 138.029 61.863 138.105 138.098l0 640.007z"
+          "M832 0h-640c-106.039 0-192 85.961-192 192v640c0 106.039 85.961 192 192 192h640c106.039 0 192-85.961 192-192v-640c0-106.039-85.961-192-192-192zM970.105 832c-0.077 76.243-61.863 138.029-138.098 138.105h-640.007c-76.243-0.077-138.029-61.863-138.105-138.098v-640.007c0.077-76.243 61.863-138.029 138.098-138.105h640.007c76.243 0.077 138.029 61.863 138.105 138.098v640.007z"
         ],
         "isMulticolor": false,
         "isMulticolor2": false,
         "tags": [
           "checkbox"
         ],
-        "defaultCode": 59680,
-        "grid": 0,
-        "attrs": [
-          {}
-        ]
+        "defaultCode": 59682,
+        "grid": 0
       },
-      "attrs": [
-        {}
-      ],
       "properties": {
-        "id": 33,
-        "order": 1055,
+        "id": 35,
+        "order": 1091,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59682,
+        "code": 59683,
         "name": "checkbox"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 34
+      "iconIdx": 35
     },
     {
       "icon": {
@@ -910,20 +922,20 @@
         "tags": [
           "checkbox2"
         ],
-        "defaultCode": 59681,
+        "defaultCode": 59683,
         "grid": 0
       },
       "properties": {
-        "id": 34,
-        "order": 1054,
+        "id": 36,
+        "order": 1092,
         "ligatures": "",
         "prevSize": 32,
-        "code": 59683,
+        "code": 59684,
         "name": "checkbox2"
       },
       "setIdx": 0,
       "setId": 0,
-      "iconIdx": 35
+      "iconIdx": 36
     }
   ],
   "height": 1024,

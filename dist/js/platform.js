@@ -18,6 +18,7 @@ var platform = {
         $('#submit').click(function(){
             platform.event.isComplete();
         })
+        popupConfirm.event.confirmClose();
     },
     event:{
         isAgree:function(e){
@@ -56,7 +57,10 @@ var platform = {
         },
     },
     submit:function(){
-        promptPopup('完成');
+        popupConfirm.event.confirmShow();
+        $('.confirm-modal').find('.confirm-text').text('确认要申请贷款吗？');
+
+
     }
     
 }

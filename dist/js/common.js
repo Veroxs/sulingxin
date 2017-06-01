@@ -21,3 +21,21 @@ $(function(){
         }
     }
  }
+ var loading = {
+    init:function(){
+        
+    },
+    event:{
+        loadingShow:function(){
+            var html= $('<div class="loading"></div>');
+            if($('.loading').length){
+                return false;
+            }
+            $('body').append(html);
+        },
+        loadingClose:function(){
+            $('.loading').remove();
+        }
+    }
+
+}

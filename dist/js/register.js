@@ -45,6 +45,7 @@ var register = {
         })
         $('#login').click(function(){
             register.event.isComplete();
+            loading.event.loadingShow();
         })
     },
     event:{

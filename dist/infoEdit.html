@@ -24,7 +24,7 @@
     <div class="edit-section">
         <div class="form-line">
             <label class="lab-tit">姓名</label>
-            <input type="text" id="name" class="input-txt" placeholder="请输入真实姓名">
+            <input type="text" id="name" class="input-txt" placeholder="请输入真实姓名" disabled="disabled">
         </div>
         <div class="form-line">
             <label class="lab-tit">身份证号</label>
@@ -52,6 +52,9 @@
             <em class="chk" id="chk"><input type="checkbox" id="chk-input" class="form-input"><i class="icon icon-checkbox"></i></em>
             同意<span>《代扣服务协议》</span>
         </div>
+        <p class="formError-tips">
+            审核失败原因：银行卡信息无效！
+        </p>
         <div class="btnWrap">
             <a class="btn-1" id="submit">完成</a>
         </div>

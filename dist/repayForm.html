@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>信息填写</title>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="format-detection" content="email=no,address=no,telephone=no"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="css/LCalendar.css"/>
+</head>
+<body class="page-repayForm" data-page="repayForm">
+<div class="header-title">
+    <em class="back"></em>
+    <h2>信息填写</h2>
+</div>
+<main>
+    <div class="notice-line">
+        <i class="icon icon-gantanhao"></i>
+        请转账还款成功后填写还款确认申请。
+    <div class="edit-section">
+        <div class="form-line">
+            <label class="lab-tit">还款日期</label>
+            <input type="text" class="input-txt" name="start_date" id="start_date" placeholder="请选择" readonly="readonly" />
+            <div class="more">*</div>
+        </div>
+        <div class="form-line">
+            <label class="lab-tit">姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</label>
+            <input type="text" class="input-txt" placeholder="">
+            <div class="more">*</div>
+        </div>
+        <div class="form-line">
+            <label class="lab-tit">电话号码</label>
+            <input type="text" class="input-txt" placeholder="">
+            <div class="more">*</div>
+        </div>
+        <div class="form-line">
+            <label class="lab-tit">借款金额</label>
+            <input type="text" class="input-txt" placeholder="">
+            <div class="more">*</div>
+        </div>
+        <div class="form-line">
+            <label class="lab-tit">还款金额</label>
+            <input type="text" class="input-txt" id="bank">
+            <div class="more">*</div>
+        </div>
+        <div class="form-line">
+            <label class="lab-tit">还款账号</label>
+            <input type="text" class="input-txt" placeholder="填写您的支付宝账号">
+            <div class="more">*</div>
+        </div>
+        <div class="btn-wrap">
+            <a class="btn-1">完成</a>
+        </div>
+        
+    </div>
+    <!-- 提示信息 -->
+    <div class="prompt-popup"><p class="nowrap-text"></p></div>
+</main>
+
+<!-- js start -->
+<script src="js/zepto.min.js"></script>
+<script src="js/autoFize.js"></script>
+<script src="js/repayForm.js"></script>
+<script src="js/LCalendar.js"></script>
+    <script type="text/javascript">
+        var calendar = new LCalendar();
+        calendar.init({
+            'trigger': '#start_date', //标签id
+            'type': 'date', //date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择,
+            'minDate': (new Date().getFullYear()-3) + '-' + 1 + '-' + 1, //最小日期
+            'maxDate': (new Date().getFullYear()+3) + '-' + 12 + '-' + 31 //最大日期
+        });
+    </script>
+<!-- js end -->
+</body>
+</html>

@@ -48,6 +48,15 @@
             <div class="more">*</div>
         </div>
         <div class="form-line">
+            <label class="lab-tit">还款方式</label>
+            <em class="arrow-right"></em>
+            <span class="select-txt"></span> 
+            <select>
+                <option value="支付宝">支付宝</option>
+                <option value="微信">微信</option>
+            </select>
+        </div>
+        <div class="form-line">
             <label class="lab-tit">还款账号</label>
             <input type="text" class="input-txt" placeholder="填写您的支付宝账号">
             <div class="more">*</div>
@@ -62,6 +71,7 @@
 </main>
 
 <!-- js start -->
+<script src="js/jquery.js"></script>
 <script src="js/zepto.min.js"></script>
 <script src="js/autoFize.js"></script>
 <script src="js/repayForm.js"></script>
@@ -74,6 +84,13 @@
             'minDate': (new Date().getFullYear()-3) + '-' + 1 + '-' + 1, //最小日期
             'maxDate': (new Date().getFullYear()+3) + '-' + 12 + '-' + 31 //最大日期
         });
+        $(function(){
+            var select = $('.form-line').find('select');
+            select.change(function(){
+                var val = $(this).find('option:selected').val();
+                $(this).parents('.form-line').find('.select-txt').text(val);
+            })
+        })
     </script>
 <!-- js end -->
 </body>

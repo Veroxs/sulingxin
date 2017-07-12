@@ -1,0 +1,174 @@
+.picker{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-align: center;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    max-width: 640PX;
+}
+.picker .picker-mask{
+    position: absolute;
+    z-index: 500;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all .5s;
+            transition: all .5s;
+    opacity: 0;
+    background: transparent;
+}
+.picker .picker-mask.show{
+    opacity: 1;
+    background: rgba(0,0,0,.6);
+}
+.picker .picker-panel{
+    position: absolute;
+    z-index: 600;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200PX;
+    -webkit-transition: all .5s;
+            transition: all .5s;
+    -webkit-transform: translateY(200PX);
+            transform: translateY(200PX);
+    background: #fff;
+}
+.picker .picker-panel.show{
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+.picker .picker-panel .picker-choose{
+    font-size: 14PX;
+    position: relative;
+    height: 38PX;
+    color: #878787;
+    background: #ebebeb;
+    border-bottom: 1PX solid #e0e0e1;
+    box-sizing: border-box;
+}
+.picker .picker-panel .picker-choose .picker-title{
+    font-size: 16PX;
+    line-height: 38PX;
+    text-align: center;
+    color: #333;
+}
+.picker .picker-panel .picker-choose .cancel,
+.picker .picker-panel .picker-choose .confirm{
+    position: absolute;
+    top: 0;
+    line-height: 140px;
+    padding: 0 30px;
+    height: 38PX;
+    line-height: 38PX;
+}
+.picker .picker-panel .picker-choose .confirm{
+    right: 0;
+    color: #fa8919;
+}
+.picker .picker-panel .picker-choose .cancel{
+    left: 0;
+}
+.picker .picker-panel .picker-content{
+    position: relative;
+    margin-top: 6PX;
+}
+.picker .picker-panel .picker-content .mask-bottom,
+.picker .picker-panel .picker-content .mask-top{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 38PX;
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    pointer-events: none;
+}
+.picker .picker-panel .picker-content .mask-top{
+    top: 0;
+    background: -webkit-gradient(linear,left bottom,left top,from(hsla(0,0%,100%,.4)),to(hsla(0,0%,100%,.8)));
+    background: -o-linear-gradient(bottom,hsla(0,0%,100%,.4),hsla(0,0%,100%,.8));
+}
+.picker .picker-panel .picker-content .mask-top:after,
+.picker .picker-panel .picker-content .mask-top:before{
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    content: ' ';
+    border-top: 1PX solid #ccc;
+}
+.picker .picker-panel .picker-content .mask-top:before{
+    top: 0;
+    display: none;
+}
+.picker .picker-panel .picker-content .mask-top:after{
+    bottom: 0;
+    display: block;
+}
+.picker .picker-panel .picker-content .mask-bottom{
+    bottom: 0;
+    background: -webkit-gradient(linear,left top,left bottom,from(hsla(0,0%,100%,.4)),to(hsla(0,0%,100%,.8)));
+    background: -o-linear-gradient(top,hsla(0,0%,100%,.4),hsla(0,0%,100%,.8));
+}
+.picker .picker-panel .picker-content .mask-bottom:after,
+.picker .picker-panel .picker-content .mask-bottom:before{
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    content: ' ';
+    border-top: 1PX solid #ccc;
+}
+.picker .picker-panel .picker-content .mask-bottom:before{
+    top: 0;
+    display: block;
+}
+.picker .picker-panel .picker-content .mask-bottom:after{
+    bottom: 0;
+    display: none;
+}
+.picker .picker-panel .wheel-wrapper{
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+
+    padding: 0 10px;
+}
+.picker .picker-panel .wheel-wrapper .wheel{
+    font-size: 16PX;
+    overflow: hidden;
+    height: 116PX;
+    -ms-flex: 1 1 1e-9px;
+    -webkit-box-flex: 1;
+        flex: 1;
+    flex-basis: 1e-9px;
+}
+.picker .picker-panel .wheel-wrapper .wheel .wheel-scroll{
+    line-height: 38PX;
+    margin-top: 38PX;
+    box-sizing: border-box;
+}
+.picker .picker-panel .wheel-wrapper .wheel .wheel-scroll .wheel-item{
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 40PX;
+    line-height: 40PX;
+    white-space: nowrap;
+    color: #333;
+}
+.picker .picker-footer{
+    height: 28PX;
+}
